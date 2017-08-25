@@ -1,0 +1,152 @@
+﻿@charset "utf-8";
+
+* {
+	font-family: HelveticaNeueCyr, Helvetica, arial;
+	font-size: 14px;
+}
+
+body {
+	background: #eae5ec;	
+	background: -moz-radial-gradient(bottom right, ellipse cover,  rgba(250,250,250,1) 0%, rgba(234,229,236,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, bottom right, 0px, bottom left, 100%, color-stop(0%,rgba(250,250,250,1)), color-stop(100%,rgba(234,229,236,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(bottom right, ellipse cover,  rgba(250,250,250,1) 0%,rgba(234,229,236,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(bottom right, ellipse cover, rgba(250,250,250,1) 0%,rgba(234,229,236,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(bottom right, ellipse cover, rgba(250,250,250,1) 0%,rgba(234,229,236,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at bottom right,  rgba(250,250,250,1) 0%,rgba(234,229,236,1) 100%); /* W3C */
+}
+
+strong {
+	color: #800b0b;
+}
+
+#container {
+	background:url(christmas-tree.png);
+	background-position:left top;
+	background-repeat:no-repeat;
+	display:block;
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-2;
+}
+
+ul, ol {
+	list-style-position:inside;
+	padding:0;
+}
+
+a {
+	text-decoration:underline;
+	color:#800b0b;	
+}
+a:hover {
+	color:#C01b1b;
+	text-decoration:underline;
+}
+
+#letter {
+	display:block;
+	position:relative;
+	width:700px;
+	margin:50px auto;
+	background-color: #fcf2e0;
+	padding: 30px 60px;	
+	text-align:justify;
+	text-indent: 30px;
+	/* outset */
+	-webkit-box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 15px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 15px rgba(50, 50, 50, 0.75);
+	/* inset */
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.05);
+}
+
+#letter:before, #letter:after {
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	-webkit-transform: skew(-5deg) rotate(-5deg);
+	-moz-transform: skew(-5deg) rotate(-5deg);
+	-ms-transform: skew(-5deg) rotate(-5deg);
+	-o-transform: skew(-5deg) rotate(-5deg);
+	transform: skew(-5deg) rotate(-5deg);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+}
+#letter:after {
+	left: auto;
+	right: 12px;
+	-webkit-transform: skew(5deg) rotate(5deg);
+	-moz-transform: skew(5deg) rotate(5deg);
+	-ms-transform: skew(5deg) rotate(5deg);
+	-o-transform: skew(5deg) rotate(5deg);
+	transform: skew(5deg) rotate(5deg);
+}
+
+#letter h2 {
+	text-align:center;
+	color: #800b0b;
+	font-size:32px;
+	font-weight:bold;
+}
+
+#letter h3 {
+	color: #800b0b;
+	font-size:16px;
+	border-bottom: 1px dotted lightgray;
+	margin-bottom: 2px;
+	margin-top: 30px;
+	text-indent: 0;
+}
+
+#letter .sign {
+	text-align:right;
+	font-style:italic;
+}
+
+#letter p img {
+	width:200px;
+	border:5px solid white;
+	border-radius:30% 5%;
+	float:left;
+	margin:0 14px 7px 0;
+}
+
+#convert {
+	display:block;
+	position:absolute;
+	right:0;
+	top:20px;
+	width:500px;
+	height:500px;
+	background-image:url(letter.png);
+	background-position: right top;
+	background-repeat:no-repeat;
+	z-index:-1;
+	opacity:0.6;
+}
+
+#footer {
+	text-align:center;
+}
+#footer ul {
+	display:inline;
+	list-style:none;
+}
+#footer ul li {
+	display:inline-block;
+}
+
+.clear-fix {
+	clear:both;
+}
